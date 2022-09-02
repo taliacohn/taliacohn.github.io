@@ -1,0 +1,99 @@
+/* Font Style */
+h1 {
+    font-family: 'Aboreto', cursive;
+    font-size: 2rem;
+    padding: 5;
+    text-align: center;
+}
+
+nav {
+    font-family: 'Comfortaa', cursive;
+    font-size: 0.8rem;
+}
+
+Grid Layout */
+#homepage {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+} 
+
+/* aside {
+    grid-row: 3/6;
+    grid-column: 1/3;
+    background-color: gold;
+    height: 300px;
+} */
+
+header {
+    grid-row: 1;
+    grid-column: 1/13; 
+    background-color: white;
+    height: 100px; 
+}
+
+nav {
+    grid-row: 2/5;
+    grid-column: 1/13; 
+    background-color: white;
+    height: 100px;
+    text-align: center;
+}
+
+main {
+    grid-row: 5/9;
+    grid-column: 5/11;
+    background-color: white;
+    height: 200px;
+
+}
+
+.avatar > img {
+    width: 200px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+.avatar {
+    grid-row: 6/9;
+    grid-column: 2/5;
+    background-color: white;
+}
+
+footer {
+    grid-row: 9;
+    grid-column: 1/13;
+    background-color: lightgreen;
+    height: 100px;
+}
+
+
+/* Text Area Style */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0
+}
+
+nav ul > li {
+    display: inline-block;
+    margin: 0.5rem;
+}
+
+nav li > a {
+    display: block;
+    padding: 1rem;
+    color: black;
+}
+
+nav li > a:hover {
+    color: steelblue;
+}
+
+main p > a {
+    text-decoration: underline;
+    color: black;
+}
+
+main p > a:hover {
+    color: steelblue;
+}

@@ -1,0 +1,347 @@
+@font-face {
+    font-family: 'circular';
+    src: url(../fonts/CircularStd-Light.otf);
+}
+
+/* Header */
+
+h1 {
+    font-family: 'Aboreto', cursive;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-align: center;
+    background: rgb(92,118,119);
+background: linear-gradient(27deg, rgba(92,118,119,0.4999543128654971) 0%, rgba(96,171,166,0.5087262426900585) 48%, rgba(116,181,72,0.46486659356725146) 100%);
+    margin: 0.5rem 0rem 0.5rem 0rem;
+    padding: 1rem;
+}
+
+h1 a {
+    text-decoration: none;
+}
+
+h1 a:visited {
+    color: black;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    background-color: rgba(181, 214, 194, 0.285);
+    border: 5px dotted rgb(133, 206, 163);
+    text-decoration: none;
+    border-bottom: none;
+    padding: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+nav li:last-child a {
+    border-bottom: 5px dotted rgb(133, 206, 163);
+}
+
+
+/* Main */
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+}
+
+.avatar > img {
+    border: 7px double rgba(16, 123, 61, 0.376);
+    border-radius: 50%;
+    width: 8rem;
+    margin: 2rem;
+    border-color: 2px solid rgb(133, 206, 163);
+}
+
+main p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 3rem;
+    margin-left: 3rem;
+    margin-top: 0rem;
+    text-indent: 5%;
+}
+
+main p a {
+    color: rgb(11, 11, 121);
+}
+
+main p a:visited {
+    color: blue;
+}
+
+/* Footer */
+footer {
+    color:rgb(65, 95, 77);
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+#contact-me a{
+    color:rgb(97, 149, 119);
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+#contact-me a:hover {
+   color: rgb(62, 91, 74);;
+    /* color:rgb(97, 149, 119); */
+}
+/* 
+#contact-me a:visited {
+    color: rgb(97, 149, 119);
+} */
+
+/* Hobbies Styles */
+#hobbies {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#hobbies > h2 {
+    display: inline-block;
+    border: 2px dashed rgb(80, 164, 115);
+    padding: 1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#gallery i {
+    font-size: 1.75rem;
+    color: rgb(88, 175, 124);
+}
+
+#gallery h2 {
+    font-size: 0.75rem;
+    width: 5.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Tablets */
+@media screen and (min-width: 30em) and (max-width: 64em) {
+    /* Header */
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 0;
+    }
+
+    h1 {
+        padding: 2rem;
+        font-size: 2.5rem;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1;
+    }
+
+    nav a {
+        border: none;
+        background-color: rgba(240, 248, 255, 0);
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    nav li:last-child a {
+        border-bottom: none;
+    }
+
+    /* Main */
+    main {
+        flex-flow: row;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    article {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 4rem;
+    }
+    
+    .avatar > img {
+        border: 11px double rgba(16, 123, 61, 0.376);
+        border-radius: 50%;
+        width: 13rem;
+        margin: 3rem;
+        margin-left: 8rem;
+    }
+
+    /* Hobbies Styles */
+    #hobbies {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    #hobbies > h2 {
+        display: inline-block;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bolder;
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+        letter-spacing: 0.05rem;
+    }
+
+    #gallery {
+        display: flex;
+        justify-content: space-evenly;
+        margin-right: 5rem;
+        margin-left: 5rem;
+        margin-top: 1rem;
+    }
+
+    #gallery i {
+        font-size: 3rem;
+        color: rgb(88, 175, 124);
+    }
+
+    #gallery h2 {
+        font-size: 1.1rem;
+        width: 5.5rem;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 1.25rem;
+    }
+    
+    #contact-me a{
+        font-size: 1.75rem;
+    }
+
+}
+
+/* Desktop */
+@media screen and (min-width: 64em) {
+    /* Header */
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 0;
+    }
+
+    h1 {
+        padding: 2rem;
+        font-size: 3rem;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1;
+    }
+
+    nav a {
+        border: none;
+        background-color: rgba(240, 248, 255, 0);
+        text-align: center;
+        font-size: 1.25rem;
+    }
+
+    nav li:last-child a {
+        border-bottom: none;
+    }
+
+    nav a:hover {
+        text-decoration: 1px solid underline;
+    }
+
+    /* Main */
+    main {
+        flex-flow: row;
+        align-items: center;
+        margin-top: 4rem;
+    }
+
+    article {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 10rem;
+        padding-top: 2.5rem;
+    }
+
+    article p {
+        font-size: 1.5rem;
+    }
+    
+    .avatar > img {
+        border: 11px double rgba(16, 123, 61, 0.376);
+        border-radius: 50%;
+        width: 15rem;
+        margin-left: 10rem;
+    }
+
+    /* Hobbies Styles */
+    #hobbies {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    #hobbies > h2 {
+        display: inline-block;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: bolder;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        letter-spacing: 0.05rem;
+    }
+
+    #gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-right: 15rem;
+        margin-left: 15rem;
+        margin-top: 1rem;
+    }
+
+    #gallery i {
+        font-size: 4.5rem;
+        color: rgb(88, 175, 124);
+    }
+
+    #gallery h2 {
+        font-size: 1.25rem;
+        width: 5.5rem;
+        letter-spacing: 0.05rem;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 1.5rem;
+    }
+    
+    #contact-me a{
+        font-size: 2rem;
+    }
+
+}
