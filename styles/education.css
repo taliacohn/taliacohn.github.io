@@ -1,0 +1,21 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+figure {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: calc(100vw - 2em);
+  padding: 1.5em;
+  background-color: white;
+  border: 1px solid black;
+  max-width: 800px;
+  padding: 2em;
+  margin: 2em;
+}
