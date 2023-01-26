@@ -14,8 +14,12 @@ figure {
   max-width: calc(100vw - 2em);
   padding: 1.5em;
   background-color: white;
-  border: 1px solid black;
+  border-bottom: 1px solid black;
   max-width: 800px;
   padding: 2em;
   margin: 2em;
+}
+
+img {
+  width: 100px;
 }
