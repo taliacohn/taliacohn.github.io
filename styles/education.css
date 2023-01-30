@@ -23,3 +23,7 @@ figure {
 img {
   width: 100px;
 }
+
+figcaption {
+  flex: 2;
+}
