@@ -22,8 +22,13 @@ figure {
 
 img {
   width: 100px;
+  margin-right: 10px;
 }
 
 figcaption {
   flex: 2;
+}
+
+span {
+  font-size: 1.25rem;
 }
